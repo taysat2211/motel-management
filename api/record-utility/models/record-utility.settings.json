@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "record_utilities",
+  "info": {
+    "name": "RecordUtility"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "electricIndex": {
+      "type": "integer"
+    },
+    "waterIndex": {
+      "type": "integer"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "record_utilities",
+      "dominant": true
+    }
+  }
+}
