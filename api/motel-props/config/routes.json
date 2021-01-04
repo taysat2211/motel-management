@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/motel-props",
+      "handler": "motel-props.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/motel-props/count",
+      "handler": "motel-props.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/motel-props/:id",
+      "handler": "motel-props.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/motel-props",
+      "handler": "motel-props.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/motel-props/:id",
+      "handler": "motel-props.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/motel-props/:id",
+      "handler": "motel-props.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

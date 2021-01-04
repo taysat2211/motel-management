@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motel_props",
+  "info": {
+    "name": "MotelProps"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "motel": {
+      "via": "motel_prop",
+      "model": "motel"
+    },
+    "electricPrice": {
+      "type": "float"
+    },
+    "waterPrice": {
+      "type": "float"
+    }
+  }
+}

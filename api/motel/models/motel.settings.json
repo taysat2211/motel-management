@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motels",
+  "info": {
+    "name": "Motel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "motel_prop": {
+      "model": "motel-props",
+      "via": "motel"
+    },
+    "listImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
