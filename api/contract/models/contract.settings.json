@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contracts",
+  "info": {
+    "name": "Contract"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "room": {
+      "model": "room",
+      "via": "contracts"
+    },
+    "representative": {
+      "type": "string"
+    },
+    "deposit": {
+      "type": "float"
+    },
+    "rentalTo": {
+      "type": "datetime"
+    },
+    "rentalFrom": {
+      "type": "datetime"
+    },
+    "tenant": {
+      "model": "tenant"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

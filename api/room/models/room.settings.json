@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "room",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "motel": {
+      "model": "motel",
+      "via": "rooms"
+    },
+    "name": {
+      "type": "string"
+    },
+    "listImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "maxRoomer": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "integer"
+    },
+    "isStaying": {
+      "type": "boolean"
+    },
+    "rentalPrices": {
+      "type": "float"
+    },
+    "tenants": {
+      "via": "room",
+      "collection": "tenant"
+    },
+    "contracts": {
+      "via": "room",
+      "collection": "contract"
+    }
+  }
+}

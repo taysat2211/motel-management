@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "motels",
+  "collectionName": "tenants",
   "info": {
-    "name": "Motel",
+    "name": "Tenant",
     "description": ""
   },
   "options": {
@@ -14,7 +14,7 @@
     "name": {
       "type": "string"
     },
-    "listImage": {
+    "avatar": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,9 +25,15 @@
       "plugin": "upload",
       "required": false
     },
-    "rooms": {
-      "via": "motel",
-      "collection": "room"
+    "address": {
+      "type": "string"
+    },
+    "idCard": {
+      "type": "uid"
+    },
+    "room": {
+      "model": "room",
+      "via": "tenants"
     }
   }
 }
