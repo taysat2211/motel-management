@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/utility-bills",
+      "handler": "utility-bill.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/utility-bills/count",
+      "handler": "utility-bill.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/utility-bills/:id",
+      "handler": "utility-bill.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/utility-bills",
+      "handler": "utility-bill.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/utility-bills/:id",
+      "handler": "utility-bill.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/utility-bills/:id",
+      "handler": "utility-bill.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

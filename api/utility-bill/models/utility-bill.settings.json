@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "utility_bills",
+  "info": {
+    "name": "utilityBill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "beginDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "float"
+    }
+  }
+}
