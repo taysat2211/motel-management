@@ -1,24 +1,24 @@
 {
-  "kind": "collectionType",
-  "collectionName": "motel_props",
-  "info": {
-    "name": "MotelProps"
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
-  },
-  "attributes": {
-    "motel": {
-      "via": "motel_prop",
-      "model": "motel"
+    "kind": "collectionType",
+    "collectionName": "motel_props",
+    "info": {
+        "name": "MotelProps",
+        "description": ""
     },
-    "electricPrice": {
-      "type": "float"
+    "options": {
+        "increments": true,
+        "timestamps": true,
+        "draftAndPublish": true
     },
-    "waterPrice": {
-      "type": "float"
+    "attributes": {
+        "electricPrice": {
+            "type": "float"
+        },
+        "waterPrice": {
+            "type": "float"
+        },
+        "motel": {
+            "model": "motel"
+        }
     }
-  }
 }

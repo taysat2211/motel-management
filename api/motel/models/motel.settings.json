@@ -1,33 +1,29 @@
 {
-  "kind": "collectionType",
-  "collectionName": "motels",
-  "info": {
-    "name": "Motel",
-    "description": ""
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
-  },
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "motels",
+    "info": {
+        "name": "Motel",
+        "description": ""
     },
-    "motel_prop": {
-      "model": "motel-props",
-      "via": "motel"
+    "options": {
+        "increments": true,
+        "timestamps": true,
+        "draftAndPublish": true
     },
-    "listImage": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "listImage": {
+            "collection": "file",
+            "via": "related",
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos"
+            ],
+            "plugin": "upload",
+            "required": false
+        }
     }
-  }
 }
