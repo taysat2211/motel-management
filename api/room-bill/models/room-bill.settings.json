@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_bills",
+  "info": {
+    "name": "RoomBill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "roomID": {
+      "type": "integer"
+    },
+    "beginDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "createAt": {
+      "type": "datetime"
+    },
+    "updateAt": {
+      "type": "datetime"
+    }
+  }
+}
