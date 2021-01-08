@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "repairs",
+  "info": {
+    "name": "Repair"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "listImage": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "motelID": {
+      "type": "integer"
+    },
+    "roomID": {
+      "type": "integer"
+    },
+    "userID": {
+      "type": "integer"
+    },
+    "cost": {
+      "type": "float"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "isRepaired": {
+      "type": "boolean"
+    }
+  }
+}
